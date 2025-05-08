@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>HYTAM</title>
+</head>
+<body>
+    <nav>
+        <div class="logo" onclick="window.scrollTo(0, 0)">
+            <h1>RGZ</h1>
+        </div>
+        <ul>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="title">
+            <p class="p-atas">2025</p>
+            <h1>HYTAM</h1>
+            <p class="p-bawah">N Word</p>
+        </div>
+        <div class="hero-footer">
+            <div class="medsos">
+                <a href="https://www.instagram.com/black" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/in/black" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.github.com/in/black" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <svg class="arrows" onclick="window.scrollTo(0, document.querySelector('.projects').offsetTop)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 72">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+            <div class="scroll">
+                <p>SCROLL</p>
+                <div class="line"></div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="image-carousel">
+            <img src="img/work7.jpg" alt="">
+            <img src="img/work8.jpg" alt="">
+            <img src="img/work9.jpg" alt="">
+        </div>
+        <h1 class="projects-title">PORTFOLIO</h1>
+        <p class="projects-description"><b>Ini hasil gw motret sendiri jangan diambil!!!</b></p>
+        <p class="projects-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem illo velit aut praesentium. Nostrum, pariatur illo, iusto, tempore similique ullam expedita quod iure architecto mollitia eos veniam. Ab, unde!</p>
+        <button class="btn" onclick="window.open('https://rafie-garish.vercel.app/#work', '_blank');">View Project</button>
+        <svg class="arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 72">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h1 class="contact-text-title">CONTACT</h1>
+            <p class="projects-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus lacus a quam finibus, quis vulputate eros gravida. Phasellus varius ullamcorper nisl. Praesent efficitur augue sodales elementum vulputate. Curabitur nec eleifend dolor. Cras venenatis ante non erat convallis sodales. Curabitur commodo aliquam neque, at fermentum tellus gravida a. Aliquam tempus nunc vitae nisl imperdiet, vitae tincidunt ex dictum. Cras a arcu ut augue convallis egestas. </p>
+            <h3>Alamat</h3>
+            <p class="projects-description">Jl. Diponegoro 21B, Pacitan, Jawa Timur, Indonesia</p>
+            <h3>Phone</h3>
+            <p class="projects-description">+6281357494657</p>
+            <h3>Email</h3>
+            <p class="projects-description">rafiegarishzachary@gmail.com</p>
+        </div>
+        <div class="contact-form">
+            <h1>CONTACT FORM</h1>
+            <form class="form">
+                <input class="form-nama" type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" rows="5" placeholder="Message"></textarea>
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

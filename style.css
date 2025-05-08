@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    background-color: transparent;
+    color: white;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.hero {
+    background: url("img/bg.png") no-repeat center center/cover;
+    height: 100dvh;
+    z-index: -1;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 0;
+}
+
+.hero .title h1 {
+    font-size: 6rem;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+.hero .title .p-atas {
+    font-size: 0.75rem;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    padding-right: 130px;
+    text-align: left;
+}
+
+.hero .title .p-bawah {
+    font-size: 0.75rem;
+    color: white;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    padding-left: 100px;
+    text-align: left;
+    top: 0;
+}
+
+.hero .hero-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    padding: 3%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .hero-footer .scroll {
+    transform: rotate(90deg);
+    font-size: 0.75rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    gap: 30px;
+    top: 0;
+    padding-bottom: 50px;
+    padding-right: 15px;
+}
+
+.hero .hero-footer .medsos {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.hero .hero-footer .scroll .line {
+    border-right: 1px solid white;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(90deg);
+}
+
+.arrows {
+    scale: 0.5;
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+    cursor: pointer;
+}
+
+.arrows path {
+	stroke: white;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+.projects {
+    background: url("img/bg.png") no-repeat center center/cover;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10%;
+}
+
+.projects .image-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.projects .image-carousel img {
+    width: 35%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .image-carousel img:nth-child(odd) {
+    filter: blur(1px);
+}
+
+.projects .image-carousel img:nth-child(2) {
+    width: 45%;
+    padding-bottom: 31px;
+}
+
+.projects .projects-title {
+    font-size: 3rem;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+.projects-description {
+    font-size: 0.75rem;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    background: #1A1B20;
+    box-shadow: 8px 8px 16px #121317,
+                -8px -8px 16px #222329;
+}
+
+.btn:hover {
+    background: #1A1B20;
+    box-shadow: 4px 4px 16px #121317,
+                -4px -4px 16px #222329;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact {
+    background: url("img/bg.png") no-repeat center center/cover;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 25%;
+    padding: 10%;
+}
+
+.contact .contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    padding: 5%;
+}
+
+.contact .contact-text .contact-text-title {
+    font-size: 3rem;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contact .contact-form {
+    height: 90%;
+    width: 50%;
+    box-shadow: 8px 8px 16px #121317,
+                -8px -8px 16px #222329;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    gap: 10%;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    background: transparent;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #121317;
+    
+}
+
+.form-nama {
+    background-color: transparent;
+    /* border: none; */
+    border-style: none;
+    border-bottom: white 2px;
+    height: 10%;
+}
+
+.form-nama:hover {
+    border: none;
+    background-color: white;
+}
+
+.padding-bottom {
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .projects .image-carousel {
+        width: 90%;
+    }
+
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    .contact .contact-text {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .contact-form {
+        width: 100%;
+        padding: 0 45%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .form-nama {
+        width: 90%;
+    }
+}
